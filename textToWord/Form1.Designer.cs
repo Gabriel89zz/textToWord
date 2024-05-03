@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            button1 = new Button();
+            txtNormalText = new TextBox();
+            btnSaveAsWord = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // txtNormalText
             // 
-            textBox1.Location = new Point(12, 12);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(776, 362);
-            textBox1.TabIndex = 0;
+            txtNormalText.Location = new Point(12, 12);
+            txtNormalText.Multiline = true;
+            txtNormalText.Name = "txtNormalText";
+            txtNormalText.Size = new Size(776, 362);
+            txtNormalText.TabIndex = 0;
             // 
-            // button1
+            // btnSaveAsWord
             // 
-            button1.Location = new Point(12, 390);
-            button1.Name = "button1";
-            button1.Size = new Size(114, 48);
-            button1.TabIndex = 1;
-            button1.Text = "Save as Word";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnSaveAsWord.Location = new Point(12, 390);
+            btnSaveAsWord.Name = "btnSaveAsWord";
+            btnSaveAsWord.Size = new Size(114, 48);
+            btnSaveAsWord.TabIndex = 1;
+            btnSaveAsWord.Text = "Save as Word";
+            btnSaveAsWord.UseVisualStyleBackColor = true;
+            btnSaveAsWord.Click += btnSaveAsWord_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(btnSaveAsWord);
+            Controls.Add(txtNormalText);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -65,7 +65,7 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private Button button1;
+        private TextBox txtNormalText;
+        private Button btnSaveAsWord;
     }
 }

@@ -11,7 +11,7 @@ namespace textToWord
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSaveAsWord_Click(object sender, EventArgs e)
         {
             SaveFileDialog dialog = new SaveFileDialog();
             dialog.Filter = "Word Documents (*.docx)|*.docx";
@@ -27,7 +27,7 @@ namespace textToWord
                 Body body = mainPart.Document.AppendChild(new Body());
                 Paragraph para = body.AppendChild(new Paragraph());
                 Run run = para.AppendChild(new Run());
-                run.AppendChild(new Text(textBox1.Text));
+                run.AppendChild(new Text(txtNormalText.Text));
             }
         }
     }
